@@ -64,31 +64,36 @@ Azure Backup
 Azure Monitor
 CDN(Content Delivery Network)
 
+Azure Database Service
+Deployment options: 
+SQL databse (PaaS)    			 														SQL server on vm
+Managed	instance				SingleDatabase 					Elastic Pool
+migrate old server				managed via logical 			pool of dbs with
+								server							a shared set of resources
+																managed via a logical server
 
+SQL db as IaaS we are responsible for managing the SQL server on that particular vm
 
+Azure SQL Database service tiers
+General Purpose/						Bussiness Critical/								Hyperscale service
+Standard model							Premium service tier model						tier model
+separation of computing and storage   	cluster of db engine process.					
+service. Dependes on Azure premium
+Storage.		
 
+SQL database logical server
 
+central administrative point for multiple single or pooled db logins,firewall rules, auditing rules, threat detection policies and failover groups.\
 
+All the dbs on server are created within the same region as the logical server.
 
+Azure db logical server is the parent resource for db, elastic pools, and data warehouses.
 
+Azure SQL Managed Instance
+New implementation based on VCore based purchasing model
 
+Advantages
+Easy lift and shift 		Fully managed PaaS		New Bussiness Model 			Security
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
+Azure COSMOS Database
+NoSQL db 
